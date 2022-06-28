@@ -5,14 +5,26 @@ import Main_Navbar from './Components/Main_Navbar';
 import Navbar from './Components/Navbar';
 import Table from './Components/Table';
 import SideBar from './Components/SideBar';
+import {
+  Routes,
+  Route,
+  Link,
+  Outlet,
+} from "react-router-dom";
+import New_Recuriment from './Components/New_Recuriment';
 
 function App() {
   return (
     <div className='App'>
       <Main_Navbar />
       <Navbar />
-      <Table />
       <SideBar />
+      <Routes>
+        <Route path="New_Recuriment" element={<New_Recuriment/>} />
+        <Route path="active" element={<Table />} />
+  
+    </Routes>
+      {/* <New_Recuriment/> */}
       
     </div>
   );

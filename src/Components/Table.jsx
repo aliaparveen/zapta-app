@@ -22,12 +22,14 @@ function Table() {
             <td>Otto</td>
                       <td>28/6/2022</td>
                       <td><select className="form-select form-select-lg mb-3" aria-label="Default select example">
-  <option selected>Inprogress</option>
+              <option selected>In Progress</option>
   <option value="1">One</option>
   
                       </select></td>
                       <td>
-                      <button className="btn"><i className="fa fa-trash"></i></button>
+              <button className="btn btn-danger">Delete</button>
+              <button className="btn btn-success">Update</button>
+              <button className='btn btn-warning'>Move</button>
                       </td>
             
           </tr>

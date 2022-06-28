@@ -1,5 +1,11 @@
 import React from 'react'
 import "./Navbar.css";
+import {
+  Routes,
+  Route,
+  Link,
+  Outlet,
+} from "react-router-dom";
 function Navbar() {
   return (
       <div className='Navbar'>
@@ -7,7 +13,7 @@ function Navbar() {
       
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link active" href="#">Active</a>
+              <Link className="nav-link active" to="active">Active</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Archive</a>
@@ -17,7 +23,8 @@ function Navbar() {
             </li>
         </ul>
         <div className="create_newrs">
-            <button  className='btn btn-success align-right' type="submit">Create New Recruitment</button>
+           <Link className="create_newrs" to="New_Recuriment">Create New Recruitment</Link>
+          
         </div>
       </nav>  
      
