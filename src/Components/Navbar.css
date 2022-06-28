@@ -1,0 +1,117 @@
+.Navbar {
+  position: absolute;
+  align-content: right;
+  width: auto;
+  height: 74.45px;
+  left: 326.07px;
+  top: 96.68px;
+  border-radius: 5px 5px 0px 0px;
+}
+.create_newrs {
+  position: relative;
+  left: 9.75%;
+  right: 9.51%;
+  top: 28.75%;
+  bottom: 28.75%;
+  font-family: "SF UI Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: end;
+
+  color: #0dd817;
+}
+.table_data {
+  position: relative;
+  height: 849.3123779296875px;
+  width: 1084.9320068359375px;
+  left: 326.0732421875px;
+  top: 96.67822265625px;
+  border-radius: 5px;
+}
+.side_bar {
+  position: absolute;
+  width: 270.21px;
+  height: 1335.98px;
+  left: 0px;
+  top: 0px;
+  background: #142d52;
+}
+#top_logo {
+  position: absolute;
+  width: 174.24px;
+  height: 51.94px;
+  left: 61.49px;
+  top: 40.54px;
+}
+#b-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  position: absolute;
+  width: 202.82px;
+  height: 176.43px;
+  left: 48px;
+  top: 1111px;
+}
+#list-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 170.49px;
+  height: 21px;
+  left: 33.51px;
+  top: 133px;
+}
+.Navbar_M {
+  position: relative;
+  width: auto;
+  height: 74.45px;
+  align-items: center;
+}
+.navbar-brand {
+  position: absolute;
+  width: 183px;
+  height: 28px;
+  left: 326px;
+  top: 40px;
+  font-family: "Roboto" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+#eng {
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  left: 1178.88px;
+  top: 48.49px;
+
+  font-family: "SF UI Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+
+  color: #918d8d;
+}
+#profile {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1279.89px;
+  top: 40px;
+}
