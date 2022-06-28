@@ -12,6 +12,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import New_Recuriment from './Components/New_Recuriment';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
   
     </Routes>
       {/* <New_Recuriment/> */}
-      
+      <Footer/>
     </div>
   );
 }
