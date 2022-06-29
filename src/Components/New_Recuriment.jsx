@@ -115,7 +115,7 @@ function New_Recuriment() {
                 showAlert && (
                     <div className="px-5">
                         <div className="alert alert-success">
-                            <strong>Well done!</strong> {id ? "edit" : "added a new"} Employee.
+                            <strong>Well done!</strong> {id ? "edit" : "added a new"} Succees.
                         </div>
                     </div>
                 )
