@@ -1,56 +1,39 @@
-import React from 'react'
-import "./Navbar.css"
+import React from "react";
+import "./Navbar.css";
+import Tablelist  from "./Tablelist";
+import { useState, useEffect } from "react";
+import { getlisttabledata } from "./Services/localstorage";
 function Table() {
+  const [listtabledata, setlisttabledata] = useState('');
+  useEffect(() => {
+    setlisttabledata(getlisttabledata());
+  },[]);
   return (
-      <div className="table_data">
-          <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Recuriments Name</th>
-            <th scope="col">Candates No</th>
-                      <th scope="col">Start Date</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Action</th>
-            
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-                      <td>28/6/2022</td>
-                      <td><select className="form-select form-select-lg mb-3" aria-label="Default select example">
-              <option selected>In Progress</option>
-  <option value="1">One</option>
-  
-                      </select></td>
-                      <td>
-              <button className="btn btn-danger">Delete</button>
-              <button className="btn btn-success">Update</button>
-              <button className='btn btn-warning'>Move</button>
-                      </td>
-            
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-                      <td>28/6/2022</td>
-                      <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-                      <td>28/6/2022</td>
-                      <td></td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="table_data">
+      <h1 className="my-5 text-center">Data List</h1>
+      {listtabledata.length >0 ? (
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Recuriments Name</th>
+              <th>Candates No</th>
+              <th>Start Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* <Tablelist /> */}
+            {
+                                    listtabledata.map(table_data => <Tablelist table_data={table_data} key={table_data.id} setlisttabledata={setlisttabledata} />)
+                                }
+          </tbody>
+        </table>
+      ) : (
+        <h1 className="text-center">Sorry No data</h1>
+      )}
     </div>
-  )
+  );
 }
-
-export default Table
+export default Table;

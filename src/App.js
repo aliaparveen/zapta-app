@@ -1,3 +1,5 @@
+import react from 'react';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -8,11 +10,11 @@ import SideBar from './Components/SideBar';
 import {
   Routes,
   Route,
-  Link,
-  Outlet,
+  
 } from "react-router-dom";
-import New_Recuriment from './Components/New_Recuriment';
+import New_Recuriment  from './Components/New_Recuriment';
 import Footer from './Components/Footer';
+import React from 'react';
 
 function App() {
   return (
