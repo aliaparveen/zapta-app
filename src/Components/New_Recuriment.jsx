@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import {useForm} from "./hooks/useForm"
 import { addtable_data, edittable_data,gettable_dataById } from "./Services/localstorage";
 function New_Recuriment() {
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const { id } = useParams();
   const [showAlert, setshowAlert] = useState(false);
   const { inputValues, handleInputChange, resetForm, setForm } = useForm({
@@ -25,12 +25,11 @@ function New_Recuriment() {
 
   const handleSubmit = (e) => {
       e.preventDefault();
-      console.log(inputValues);
       resetForm();
     id
       ? edittable_data(id, inputValues)
       : addtable_data({ id: uuid(), ...inputValues });
-    resetForm();
+    //resetForm();
     setshowAlert(true);
     setTimeout(() => {
       setshowAlert(false);
@@ -59,10 +58,11 @@ function New_Recuriment() {
             value={inputValues.jobrole}
             onChange={handleInputChange}
             className="form-select"
-            aria-label="Default select example"
           >
             <option selected>Job Role</option>
-            <option value="1">One</option>
+            <option value="React Developer">React Developer</option>
+            <option value="PHP Developer">Php Developer</option>
+            <option value="React Intrn">CSS Developer</option>
           </select>
 
           <select
@@ -71,18 +71,18 @@ function New_Recuriment() {
             value={inputValues.employee_level}
             onChange={handleInputChange}
             className="form-select"
-            aria-label="Default select example"
           >
     
             
             <option selected>Select level of employee</option>
-            <option value="1">One</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate </option>
+            <option value="Advanced">Advanced</option>
           </select>
         </div>
         <br />
-        <select className="form-select" aria-label="Default select example">
+        <select className="form-select">
           <option selected>Other</option>
-          <option value="1">One</option>
         </select>
         <br />
         <br />
@@ -100,7 +100,7 @@ function New_Recuriment() {
 
         <div className="d-flex flex-row justify-content-end mt-4 flex-gap ">
           <div>
-            <button id="b-id" type="submit" className="btn btn-success ">
+            <button id="b-id" onClick={()=>navigate('/')} className="btn btn-success  ">
               Cancel
             </button>
           </div>

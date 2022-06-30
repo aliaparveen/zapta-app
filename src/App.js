@@ -7,13 +7,14 @@ import Main_Navbar from './Components/Main_Navbar';
 import Navbar from './Components/Navbar';
 import Table from './Components/Table';
 import SideBar from './Components/SideBar';
+import Footer from './Components/Footer';
 import {
   Routes,
   Route,
   
 } from "react-router-dom";
 import New_Recuriment  from './Components/New_Recuriment';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import React from 'react';
 
 function App() {
@@ -23,12 +24,14 @@ function App() {
       <Navbar />
       <SideBar />
       <Routes>
-        <Route path="New_Recuriment" element={<New_Recuriment/>} />
+        <Route path="New_Recuriment" element={<New_Recuriment />} />
+        <Route path="active/New_Recuriment" element={<New_Recuriment />} />
+        <Route path="/edit-table_data/:id" element={<New_Recuriment/>} />
         <Route path="active" element={<Table />} />
   
     </Routes>
       {/* <New_Recuriment/> */}
-      <Footer/>
+       <Footer/>
     </div>
   );
 }

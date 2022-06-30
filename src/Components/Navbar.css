@@ -21,13 +21,12 @@
   display: flex;
   align-items: center;
   text-align: end;
-
   color: #0dd817;
 }
 .table_data {
   position: relative;
-  height: 849.3123779296875px;
-  width: 1084.9320068359375px;
+  height:849.3123779296875px;
+  width:1550px;
   left: 326.0732421875px;
   top: 96.67822265625px;
   border-radius: 5px;
@@ -43,12 +42,12 @@
 #top_logo {
   position: absolute;
   width: 174.24px;
-  height: 51.94px;
+  height: 60.94px;
   left: 61.49px;
   top: 40.54px;
 }
 #b-logo {
-  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -76,8 +75,8 @@
 .Navbar_M {
   position: relative;
   width: auto;
-  height: 74.45px;
-  align-items: center;
+  height: 75px;
+  align-items: end;
 }
 .navbar-brand {
   position: absolute;
@@ -92,33 +91,17 @@
   line-height: 28px;
   color: #000000;
 }
-#eng {
-  position: absolute;
-  width: 17px;
-  height: 14px;
-  left: 1178.88px;
-  top: 48.49px;
-
-  font-family: "SF UI Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: capitalize;
-
-  color: #918d8d;
-}
 #profile {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 1279.89px;
+  width: 40px;
+  height: 40px;
+  left: 1650px;
   top: 40px;
 }
 .new-data-form{
-    position: absolute;
-width: 1084.93px;
-height: 849.31px;
+position: absolute;
+width: 1084px;
+height: auto;
 left: 328px;
 top: 166px;
 
@@ -135,18 +118,3 @@ border-radius: 5px;
 .flex-gap >div{
     margin: 10px;
 }
-
-
- .footer {
-        position: fixed;
-        left: 270px;
-        bottom: 0;
-        background-color: white;
-        color: rgb(0, 0, 0);
-        
-        width:1200px;
-        height: 100px;
-        display: flex;
-align-content: center;
-}
-  

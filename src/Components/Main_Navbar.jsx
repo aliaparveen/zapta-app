@@ -5,7 +5,7 @@ const Main_Navbar = () => {
   return (
       <div className='Navbar_M'>
           <nav className="navbar bg-White">
-        <div className="container">
+        <div className="container-fluid">
           <a className="navbar-brand">My Recruitments</a>
           <img id="profile" src={profile} alt="" />
           

@@ -14,7 +14,8 @@ export const getlisttabledata = () => {
   localStorage["listtabledata"] = JSON.stringify(listtabledata);
 };
   
-  export const removetable_data = (id) => {
+export const removetable_data = (id) => {
+  console.log(id);
     let listtabledata = getlisttabledata();
     listtabledata = listtabledata.filter((table_data) => table_data.id !== id);
     localStorage["listtabledata"] = JSON.stringify(listtabledata);

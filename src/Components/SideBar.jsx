@@ -7,9 +7,10 @@ function SideBar() {
   return (
       <div className='side_bar'>
           <img id='top_logo' src={top_logo} alt="top logo" />
-          <li> <img id='list-bar' src={side_list} alt="" /></li>
+      <li> <img id='list-bar' src={side_list} alt="" /></li>
+      <img id='b-logo' src={Side_logo} alt="mylogo" />
           
-          <img id='b-logo' src={Side_logo} alt="mylogo" />
+          
 
     </div>
   )

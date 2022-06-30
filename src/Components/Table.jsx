@@ -10,15 +10,14 @@ function Table() {
   },[]);
   return (
     <div className="table_data">
-      <h1 className="my-5 text-center">Data List</h1>
       {listtabledata.length >0 ? (
-        <table className="table table-hover">
+        <table className="table table-hover mt-auto">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Recuriments Name</th>
-              <th>Candates No</th>
-              <th>Start Date</th>
+              <th>Name</th>
+              <th>Details</th>
+              <th>Job Title</th>
+              <th>Level Of Job</th>
               <th>Status</th>
               <th>Action</th>
             </tr>

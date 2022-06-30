@@ -11,7 +11,7 @@ function Navbar() {
   return (
       <div className='Navbar'>
        < nav className="navbar navbar-expand-lg navbar-light bg-light">
-      
+
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link className="nav-link active" to="active">Active</Link>
